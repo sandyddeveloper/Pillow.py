@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .hero-section img {
+            width: 100%;
+            height: auto;
+        }
+        .footer-section {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-section a {
+            color: #ffbb33;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">E-Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}"button">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'signup' %}" type="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to E-Shop</h1>
+        <p>Your one-stop shop for all your needs</p>
+        <img src="https://via.placeholder.com/1200x400" alt="E-commerce banner">
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="mt-4">
+            <h2>Our Categories</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#"><img src="https://via.placeholder.com/200" alt="Pocket Stuffs" class="img-fluid"><br>Pocket Stuffs</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="https://via.placeholder.com/200" alt="Dresses" class="img-fluid"><br>Dresses</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="https://via.placeholder.com/200" alt="Accessories" class="img-fluid"><br>Accessories</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#"><img src="https://via.placeholder.com/200" alt="Link Items" class="img-fluid"><br>Link Items</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et urna vel nisi.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4 text-right">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="mr-2">Facebook</a>
+                    <a href="#" class="mr-2">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 E-Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
